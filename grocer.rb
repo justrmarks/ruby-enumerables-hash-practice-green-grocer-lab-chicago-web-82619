@@ -67,7 +67,7 @@ def apply_clearance(cart)
     details = item[1]
     
     
-    if details[:clearance]
+    if !!details[:clearance]
       details[:price] -= (details[:price]* 0.2).round(2)
     end
     
