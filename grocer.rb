@@ -49,8 +49,7 @@ keys = items; values= item details
            :count => coupon[:num]
       }
         end 
-      
-      cart[coupon[:item]][:count] -= coupon[:num]
+        cart[coupon[:item]][:count] -= coupon[:num]
       
     end
       
