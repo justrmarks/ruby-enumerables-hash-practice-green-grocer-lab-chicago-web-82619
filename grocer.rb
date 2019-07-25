@@ -53,8 +53,6 @@ keys = items; values= item details
       
     end
       
-    if cart[coupon[:item]][:count] < 1
-        cart.delete(coupon[:item])
     end
       
     
