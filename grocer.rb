@@ -41,6 +41,7 @@ keys = items; values= item details
         :price => (coupon[:cost] / coupon[:num]),
         
         :clearance => cart[:item][:clearance],
+        
         :count => coupon[:num]
       }
       
