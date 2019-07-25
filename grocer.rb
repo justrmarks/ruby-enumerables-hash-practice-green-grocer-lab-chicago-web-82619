@@ -37,7 +37,7 @@ keys = items; values= item details
       
       then
       
-      cart["#{:item} W/COUPON"] = {
+      cart["#{coupon[:item]} W/COUPON"] = {
         :price => (coupon[:cost] / coupon[:num]),
         
        :clearance => cart[coupon[:item]][:clearance],
