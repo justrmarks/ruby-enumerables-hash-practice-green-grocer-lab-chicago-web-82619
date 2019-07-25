@@ -39,6 +39,8 @@ keys = items; values= item details
         coupon_name = "#{coupon[:item]} W/COUPON"
         if cart[coupon_name]
           cart[coupon_name][:count] += coupon[:num]
+        else
+          
       
       then
       
