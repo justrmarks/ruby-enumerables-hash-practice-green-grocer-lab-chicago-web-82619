@@ -8,12 +8,12 @@ result = cart.each do |item|
     
     name = item.keys[0]
     count = item[name][:count]
-    #  if (!![name])
-    #   c_Cart[name][:count] +=1
-    #  else
+      if (c_Cart[name])
+       c_Cart[name][:count] +=1
+      else
         c_Cart[name] = item[name]
         c_Cart[name][:count] = 1 
-    #  end
+      end
 
 end
 return c_Cart
