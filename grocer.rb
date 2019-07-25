@@ -64,7 +64,7 @@ def apply_clearance(cart)
   
   cart.each { |item| 
   
-    name - item.keys[0]
+    name = item.keys[0]
     details = item[name]
     
     if details[:clearance]
