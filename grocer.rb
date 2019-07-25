@@ -33,7 +33,10 @@ keys = items; values= item details
   
   coupons.each do |coupon|
   
-    if cart.has_key?(coupon[:item]) && cart[coupon[:item]][:count] >= coupon[:num]
+    if cart.has_key?(coupon[:item]) 
+      
+      if cart[coupon[:item]][:count] >= coupon[:num]
+        
       
       then
       
