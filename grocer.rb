@@ -40,9 +40,6 @@ keys = items; values= item details
         if cart[coupon_name]
           cart[coupon_name][:count] += coupon[:num]
         else
-          
-      
-      then
       
       cart[] = {
         :price => (coupon[:cost] / coupon[:num]),
