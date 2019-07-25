@@ -4,15 +4,15 @@ def consolidate_cart(cart)
   # code here
 c_Cart = Hash.new
 
-result = cart.reduce(c_Cart) do |memo, item| 
+result = cart.each do |item| 
     
     name = item.keys[0]
     count = item[name][:count]
-    #  if (!!memo[name])
-    #   memo[name][:count] +=1
+    #  if (!![name])
+    #   c_Cart[name][:count] +=1
     #  else
-        memo[name] = item[name]
-        memo[name][:count] = 1 
+        c_Cart[name] = item[name]
+        c_Cart[name][:count] = 1 
     #  end
 
 end
