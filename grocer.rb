@@ -51,12 +51,8 @@ keys = items; values= item details
         end 
         cart[coupon[:item]][:count] -= coupon[:num]
       
+     end
     end
-      
-    end
-      
-    
-    
   end
   cart
 end
