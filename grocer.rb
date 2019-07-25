@@ -41,12 +41,12 @@ keys = items; values= item details
           cart[coupon_name][:count] += coupon[:num]
         else
       
-      cart[] = {
-        :price => (coupon[:cost] / coupon[:num]),
+          cart[coupon_name] = {
+           :price => (coupon[:cost] / coupon[:num]),
         
-       :clearance => cart[coupon[:item]][:clearance],
+           :clearance => cart[coupon[:item]][:clearance],
         
-        :count => coupon[:num]
+           :count => coupon[:num]
       }
       
       cart[coupon[:item]][:count] -= coupon[:num]
