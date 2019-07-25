@@ -36,12 +36,12 @@ keys = items; values= item details
     if cart.has_key?(coupon[:item]) 
       
       if cart[coupon[:item]][:count] >= coupon[:num]
-        
+        coupon_name = "#{coupon[:item]} W/COUPON"
         if 
       
       then
       
-      cart["#{coupon[:item]} W/COUPON"] = {
+      cart[] = {
         :price => (coupon[:cost] / coupon[:num]),
         
        :clearance => cart[coupon[:item]][:clearance],
